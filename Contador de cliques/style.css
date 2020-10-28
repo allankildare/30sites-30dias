@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    background-color: #EEE;
+}
+
+#container {
+    width: 300px;
+    height: 350px;
+
+    background-color: white;
+    box-shadow: 1px 1px 13px 1px #d65858;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container button {
+    text-align: center;
+    border: 0;
+    outline: none;
+}
+
+#botaoContador {
+    width: 150px;
+    height: 40px;
+
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111;
+
+    border-radius: 10px 10px 0 0;
+    background-color: #B2B2B2;
+}
+
+#botaoContador:hover {
+    color: #222;
+    transition: .3s;
+    transform: translateY(2.5px);
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+
+    border: 2px solid #B2B2B2;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    /* border: 1px solid black; */
+}
+
+#reiniciar {
+    margin-top: 8px;
+    font-size: .8rem;
+
+    background-color: transparent;
+    padding: 4px;
+    color: #111;
+}
+
+#reiniciar:hover {
+   color: #000;
+   text-decoration: underline;
+}
+
+.footer  {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.footer a, .footer a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.fa-heart {
+    color: red;
+}
+
+@media (min-width: 768px) {
+    #container {
+        width: 500px;
+        height: 300px;
+    }
+
+    #botaoContador {
+        width: 200px;
+        height: 50px;
+    }
+
+    #display {
+        width: 200px;
+        height: 50px;
+    }
+}
