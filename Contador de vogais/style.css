@@ -1,0 +1,102 @@
+:root {
+    --background-color: #121212;
+    --container-color: linear-gradient(160deg, rgba(200,36,237,1) 0%, rgba(230,115,255,1) 100%);;
+    --stroke-heading: 2px 1.3px rgba(221, 148, 255, 0.8);
+    --button-color: #262626;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: rgb(200,36,237); /* para maior compatibilidade I6+ */
+    background: var(--background-color);
+}
+
+#container {
+    background: var(--container-color);
+    width: 90vw;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+#container h1 {
+    text-shadow: var(--stroke-heading);
+    font-size: 2.5em;
+    
+}
+
+#container h2 {
+    text-shadow: var(--stroke-heading);
+    font-size: 1.8em;
+}
+
+#container input {
+    width: 40vw;
+    height: 5vh;
+    text-align: center;
+    outline: none;
+    font-size: 1.8em;
+
+    border: none;
+    border-radius: 5px 5px 0 0;
+}
+
+#container button {
+    width: 40vw;
+    height: 4vh;
+
+    outline: none;
+    border: none;
+    border-radius: 0 0 5px 5px;
+
+    background-color: var(--button-color);
+    color: white; 
+}
+
+#container .show {
+    font-size: 1.8em;
+}
+
+.footer  {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #EEE;
+}
+
+.footer a, .footer a:visited {
+    text-decoration: none;
+    color: #EEE;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.fa-heart {
+    color:red;
+}
