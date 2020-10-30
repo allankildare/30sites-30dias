@@ -3,6 +3,7 @@
     --container-color: linear-gradient(160deg, rgba(200,36,237,1) 0%, rgba(230,115,255,1) 100%);;
     --stroke-heading: 2px 1.3px rgba(221, 148, 255, 0.8);
     --button-color: #262626;
+    --button-color-hover:  #2c2c2c;
 
     font-size: 62.5%;
 }
@@ -74,6 +75,11 @@ body {
 
     background-color: var(--button-color);
     color: white; 
+}
+
+#container button:hover {
+    transition: .2s;
+    background-color: var(--button-color-hover);
 }
 
 #container .show {
