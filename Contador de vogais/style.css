@@ -5,7 +5,7 @@
     --button-color: #262626;
     --button-color-hover:  #2c2c2c;
 
-    font-size: 62.5%;
+    font-size: 62.5%; /* reduzido para 10px */
 }
 
 * {
@@ -105,4 +105,20 @@ body {
 
 .fa-heart {
     color:red;
+}
+
+/* tablet version */
+@media (min-width: 576px) {
+    #container {
+        width: 70vw;
+        height: 50vh;
+    }
+}
+
+/* desktop version */
+@media (min-width: 768px) {
+    #container {
+        width: 50vw;
+        height: 50vh;
+    }
 }
